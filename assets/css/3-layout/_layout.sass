@@ -1,0 +1,213 @@
+.slider
+  height: 100vh
+  padding-top: 55px
+  img 
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center center
+.slick-list, .slick-track
+  height: 100%
+
+.slick-next
+  position: absolute
+  display: block
+  top: 50%
+  right: 0
+
+.slick-prev
+  position: absolute
+  display: block
+  top: 50%
+  left: 0
+  z-index: 99
+
+.slick-dots
+  display: none
+
+.next
+  width: 60px
+  height: 60px
+  background-color: rgba(0, 0, 0, 0.33)
+  position: absolute
+  right: 20px
+  top: 50%
+  transform: translateY(-50%)
+  border-radius: 60px
+  cursor: pointer
+  &:before
+    content: ""
+    width: 20px
+    height: 20px
+    border-bottom: 5px solid #fff
+    border-right: 5px solid #fff
+    position: absolute
+    top: 50%
+    right: 40%
+    transform: translateY(-50%) rotate(-45deg)
+  &:hover
+    background-color: rgba(0, 0, 0, 0.55)
+
+.prev
+  width: 60px
+  height: 60px
+  background-color: rgba(0, 0, 0, 0.33)
+  position: absolute
+  left: 20px
+  top: 50%
+  transform: translateY(-50%)
+  border-radius: 60px
+  cursor: pointer
+  z-index: 1
+  &:before
+    content: ""
+    width: 20px
+    height: 20px
+    border-bottom: 5px solid #fff
+    border-left: 5px solid #fff
+    position: absolute
+    top: 50%
+    left: 40%
+    transform: translateY(-50%) rotate(45deg)
+  &:hover
+    background-color: rgba(0, 0, 0, 0.55)
+
+.banner
+  position: relative
+
+.bantext
+  color: #fff
+  position: absolute
+  left: 17%
+  top: 40%
+  z-index: 1
+// Slider End
+.card-prize
+    height: 280px
+    width: auto
+    margin-bottom: 1rem
+    & img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      background-repeat: no-repeat
+      transition: 0.3s
+      &:hover
+        transform: scale(1.1)
+
+.keterangan
+  font-size: 14px 
+      
+.modal
+  &-body
+    height: 450px
+    width: 100%
+    & img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      background-repeat: no-repeat
+  &-title
+    text-align: center
+
+.bg-slide-bottom
+  height: 50px 
+  background-color: #053944
+
+p.title
+  color: #fff
+  padding: 10px 0
+  margin-bottom: 0
+  text-align: center
+  & a 
+    color: #ffffff
+    &:hover
+      text-decoration: none
+      color: #f43101
+
+.breadcrumb
+  background-color: transparent 
+  &-item 
+    & a
+      color: #053944
+      &:hover
+        text-decoration: none
+    &.active
+      color: #f43101
+
+.breadcrumb-item + .breadcrumb-item::before
+  color: #053944
+
+.cr
+  background-color: #053944
+  color: #ffffff
+  text-align: center
+  height: 50px
+  padding-top: 1rem
+  margin-bottom: 0
+
+// Responsive Start
+@media (max-width: 991px)
+  .slider
+    height: 43vh
+
+  .card-prize
+    height: 150px
+  
+  .nav-item a,
+  .dropdown-item
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+    
+
+@media (max-width: 767px)
+  .slider
+    height: 40vh
+  
+  .next
+    width: 40px
+    height: 40px
+    &:before
+      content: ""
+      width: 15px
+      height: 15px
+      border-bottom: 3px solid #fff
+      border-right: 3px solid #fff
+  
+  .prev
+    width: 40px
+    height: 40px
+    &:before
+      content: ""
+      width: 15px
+      height: 15px
+      border-bottom: 3px solid #fff
+      border-left: 3px solid #fff
+  
+  .nav-item a,
+  .dropdown-item
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+@media (max-width: 575px)
+  .nav-item a,
+  .dropdown-item
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+  h1.title
+    font-size: 14px
+    margin-top: 1rem
+    margin-bottom: 1rem
+  
+  .keterangan
+    font-size: 10px
+
+  .breadcrumb
+    font-size: 10px
+
+  .modal-title
+    font-size: 12px
+
+  .modal-body
+    height: 300px
+
+  p.title 
+    font-size: 12px
